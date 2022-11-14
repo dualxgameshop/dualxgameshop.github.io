@@ -144,7 +144,7 @@ input[type="checkbox"]{
 
 .featureDesc {
     color: gray;
-    width: 50%;
+    width: 40%;
     height: 100px;
 }
 
@@ -155,7 +155,7 @@ input[type="checkbox"]{
 }
 
   img {
-    width: 100%;
+    width: 150%;
   }
 
   const resizeOps = () => {
