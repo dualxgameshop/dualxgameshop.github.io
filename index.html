@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+   <meta charset="utf-8">
+   <title>Dual X GameShop</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+   <nav>
+      <div class="logo">
+         Dual X GameShop
+      </div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+         <li><a class="active" href="#">Home</a></li>
+         <li><a href="freefire.html">FreeFire</a></li>
+         <li><a href="pubg.html">PUBG</a></li>
+         <li><a href="codm.html">Call of Duty Mobile</a></li>
+         <li><a href="alm.html">Apex Legends Mobile</a></li>
+      </ul>
+   </nav>
+   <div class="content">
+      <img src="https://media.tenor.com/3klZkDif0nsAAAAd/gaming-gif.gif" alt="">
+   </div>
+   <div class="features">
+      
+      <div class="feature">
+         <img src="./img/Contact.png" alt="" class="featureIcon">
+         <span class="featureTitle">Contact Us</span>
+         <span class="featureDesc"> <a href="https://www.facebook.com/dualxgameshop"><button style="background-color: rgb(72, 121, 228) ; border: none; cursor: pointer; width: 150px; align-items: center; padding: 10px;" > Facebook Page </button></a> <br>
+         <a href="mailto: dualxgameshop@gmail.com"> <button style="background-color: rgb(255, 112, 107) ; border: none; cursor: pointer; width: 150px; align-items: center; padding: 10px;"> E-mail</button> </a> <br>
+         <a href="tel: +880 1716-698556" class="single"> <button style="background-color: rgb(97, 236, 139) ; border: none; cursor: pointer; width: 150px; align-items: center; padding: 10px;">Call Us!</button></a> </span>
+      </div>
+      <div class="feature">
+         <img src="./img/Payment.png" alt="" class="featureIcon">
+         <span class="featureTitle">Fast Delivery</span>
+         <span class="featureDesc">Your amount will be delivered ASAP!</span>
+      </div>
+      <div class="feature">
+         <img src="./img/Trust.png" alt="" class="featureIcon">
+         <span class="featureTitle">Trusted</span>
+         <span class="featureDesc">Since 2017</span>
+      </div>
+   </div>
+</body>
+<script>
+   
+"use strict";
+
+!function() {
+  var t = window.driftt = window.drift = window.driftt || [];
+  if (!t.init) {
+    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+    t.factory = function(e) {
+      return function() {
+        var n = Array.prototype.slice.call(arguments);
+        return n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+      var i = document.getElementsByTagName("script")[0];
+      i.parentNode.insertBefore(o, i);
+    };
+  }
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('kg6r2xvxdiyu');
+
+</script>
+
+</html>
