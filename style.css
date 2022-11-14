@@ -155,7 +155,7 @@ input[type="checkbox"]{
 }
 
   img {
-    width: 50%;
+    width: 100%;
   }
 
   const resizeOps = () => {
