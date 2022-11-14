@@ -154,27 +154,24 @@ input[type="checkbox"]{
   width: 800px ;
 }
 
-@media screen and (max-width: 320px) {
-  /* comes into effect for screens less than or equal to 320 pixels */
-  #somethingorother {
-    width: 120px ;
-  }
-}
-@media screen and (min-width: 321px) and (max-width: 480px) {
-  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
-  #somethingorother {
-    width: 320px ;
-  }
-}
-@media screen and (min-width: 481px) {
-  /* comes into effect for screens larger than or equal to 481 pixels */
-  #somethingorother {
-    width: 480px ;
-  }
-}
-
-/* code that is here will apply to any screen size */
-
   img {
     width: 50%;
   }
+
+  const resizeOps = () => {
+    document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+  };
+
+  resizeOps();
+  window.addEventListener("resize", resizeOps);
+
+html, body {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+
+
+  .modal {
+  width: 50vw;
+  height: 50vh;
+  height: calc(var(--vh, 1vh) * 50);
+}
